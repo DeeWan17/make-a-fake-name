@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="fake_name_generator.js"></script>
+    <link rel="stylesheet" type="text/css" href="fake_name_generator.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script type="text/javascript" src="fake_name_generator.js"></script>
+    <script type="text/javascript" src="fake_name_data.js"></script>
+
+    <title>Make a Fake Name</title>
+</head>
+
+
+
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand mb-0 h1 navbar-brand" href="#">
+            <img src="faker.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Make a Fake Name
+        </a>
+        <a class="navbar-brand mb-0 h1" href="Calculator.html">
+            <img src="calc.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Brand New Calculator
+        </a>
+    </nav>
+
+    <br>
+
+
+    <div class="container">
+
+        <div id="name-info" class="info"></div>
+        <div id="date-info" class="info-date"></div>
+        <br />
+
+        <div id="generate">
+            <button onclick="generate()" type="button" class="btn btn-info btn-lg">Generate
+            </button>
+        </div>
+
+        <div id="genderSelector">
+            <button id="male" type="button" class="btn btn-secondary" onclick="genderMale()"> Male</button>
+            <button type="button" class="btn btn-secondary" onclick="genderFemale()">Female</button>
+            <br>
+            <button id="genderboth" type="button" class="btn btn-secondary" onclick="genderBoth()"> All</button>
+        </div>
+
+        <div id="alert_placeholder"></div>
+    </div>
+
+
+    <!--     <div id="alertF" class="alert alert-warning alert-dismissible fade show" data-dismiss="alert" role="alert">
+        <span >Nameset was changed to <strong>Female</strong></span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> -->
+
+<div id="footer">
+    Made by A. Borodaev © All rights reserved (I'm joking)
+</div>
+
+
+
+
+
+</body>
+
+</html>
