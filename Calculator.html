@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brand New Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand mb-0 h1 navbar-brand" href="Calculator.html">
+        <img src="calc.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Brand New Calculator
+    </a>
+
+        <a class="navbar-brand mb-0 h1 navbar-brand" href="fake_name_generator.html">
+            <img src="faker.png" width="30" height="30" class="d-inline-block align-top" alt='Go to "Make a Fake Person"'>
+            Make a Fake Name
+        </a>
+    </nav>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col-8">
+                <div>
+
+
+                    <button class="button" id="Plus" onclick="PlusButton('num1', 'num2')">Plus</button>
+                    <button class="button" onclick="MinusButton('num1', 'num2')">Minus</button>
+                    <button class="button" onclick="MultiplyButton('num1', 'num2')">Multiply</button>
+                    <button class="button" onclick="DivideButton('num1', 'num2')">Divide</button>
+                    <button class="button" onclick="SquareButton('num')">Square</button>
+                    <button class="button" onclick="RootButton('num')">Root</button>
+
+
+                </div>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="Result">this is<script>document.write(result)</script></div> -->
+</body>
+
+
+<script>
+    //    confirm("Don't you mind if we collect all your personal data from your PC?");
+
+    var PlusButton = function(num1, num2) {
+        var num1 = prompt("Enter the first number");
+        console.log(num1);
+        if (num1) {
+            var num2 = prompt("Enter the second number");
+            console.log(plus(num1, num2));
+            var result = plus(num1, num2);
+            alert("Result: " + result);
+        }
+    }
+
+    var MinusButton = function(num1, num2) {
+        var num1 = prompt("Enter the first number");
+        if (num1) {
+            var num2 = prompt("Enter the second number");
+            console.log(minus(num1, num2));
+            var result = minus(num1, num2);
+            alert("Result: " + result);
+        }
+
+    }
+
+    var MultiplyButton = function(num1, num2) {
+        var num1 = prompt("Enter the first number");
+        if (num1) {
+            var num2 = prompt("Enter the second number");
+            console.log(multiply(num1, num2));
+            var result = multiply(num1, num2)
+            alert("Result: " + result);
+        }
+    }
+
+    var DivideButton = function(num1, num2) {
+
+        var num1 = prompt("Enter the first number");
+        if (num1) {
+            var num2 = prompt("Enter the second number");
+            console.log(divide(num1, num2));
+            var result = divide(num1, num2);
+            alert("Result: " + result);
+        }
+    }
+
+    var RootButton = function(num) {
+        var num = prompt("Enter the number");
+        if (num) {
+            console.log(root(num));
+            var result = root(num);
+            alert("Result: " + result);
+        }
+    }
+
+    var SquareButton = function(num) {
+        var num = prompt("Enter the number");
+        if (num) {
+            console.log(square(num));
+            var result = square(num);
+            alert("Result: " + result);
+        }
+    }
+
+
+
+
+
+
+
+
+    var TwoNumsRequired = function(num1, num2) {
+        var num1 = prompt("Enter the first number");
+
+        var num2 = prompt("Enter the second number");
+        return parseFloat(num1);
+        return parseFloat(num2);
+        console.log(parseFloat(num1));
+        console.log(parseFloat(num2));
+    }
+
+    var plus = function(numA, numB) {
+
+        return parseFloat(numA) + parseFloat(numB);
+
+
+    }
+
+    var minus = function(numA, numB) {
+        return parseFloat(numA) - parseFloat(numB);
+    }
+
+    var multiply = function(numA, numB) {
+        return parseFloat(numA) * parseFloat(numB);
+    }
+
+    var divide = function(numA, numB) {
+        return parseFloat(numA) / parseFloat(numB);
+    }
+
+    var root = function(num) {
+        return Math.sqrt(parseFloat(num));
+    }
+
+    var square = function(num) {
+        return parseFloat(num) * parseFloat(num)
+    }
+
+
+
+
+
+
+
+
+
+    //  prompt("Which action do you want to complete?");
+
+    //   if (action === "root" || action === "log2" || action === "log10" || action === "square" || action === "float" || action === "module") {
+    //       var num = prompt("Enter your number")
+    //   } else {
+    //       var num1 = prompt("Enter the first number");
+    //     var num2 = prompt("Enter the second number");
+    //var action = function()
+
+
+
+    // }
+
+
+    //var TwoNumsRequired = function(num1, num2){
+    //   var num1 = prompt("Enter the first number");
+    //   var num2 = prompt("Enter the second number");
+    //}
+
+
+
+
+
+
+    //  var square = function(num) {
+    //     return num * num;
+    // }
+
+    var log2 = function(num) {
+        return Math.log2(num);
+    }
+
+    var log10 = function(num) {
+        return Math.log10(num);
+    }
+
+    var module = function(num) {
+        return Math.abs(num);
+    }
+
+    var float = function(num) {
+        return parseInt(num);
+    }
+
+    var divide = function(num1, num2) {
+        return num1 / num2;
+    }
+
+
+    // I'm very sorry for that spaghetti code bro
+
+    // if (action === "plus") {
+    //   console.log(plus(num1, num2));
+    // } else if (action === "root") {
+    //     console.log(root(num));
+    //  } else if (action === "minus") {
+    //     console.log(minus(num1, num2));
+    //  } else if (action === "multiply") {
+    //    console.log(multiply(num1, num2));
+    //  } else if (action === "log2") {
+    //  console.log(log2(num));
+    //} else if (action === "log10") {
+    //    console.log(log10(num));
+    //} else if (action === "module") {
+    //    console.log(module(num));
+    //    } else if (action === "float") {
+    //      console.log(float(num))
+    //    } else if (action === "divide") {
+    //      console.log(divide(num1, num2));
+    //    }
+
+</script>
+
+</html>

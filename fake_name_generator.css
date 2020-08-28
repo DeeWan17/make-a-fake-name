@@ -1,0 +1,59 @@
+#generate {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.info {
+    height: 60px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: normal;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.info-date {
+    height: 20px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#genderSelector {
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+}
+
+#genderboth{
+    margin-top: 10px;
+}
+
+.container{
+    text-align: center;
+}
+
+#alert_placeholder {
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+    display: inline-block;
+    width: 350px;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 350px;
+    height: 80px;
+    width: 100%;
+    padding-top: 30px;
+    position: static;
+    background-color: #f8f9fa!important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#male{
+    padding-right: 14px;
+}
